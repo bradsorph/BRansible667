@@ -22,20 +22,20 @@
        - git
     
     - name: Configure firewall for access
-      firewalld:
+      ansible.posix.firewalld:
         permanent: yes
         service: http
         state: enabled
         immediate: yes
     
     - name: Create Facts Dir on Managed Hosts
-      file:
+      ansible.builtin.file:
         path: "{{ facts_dir }}"
         state: directory
         recurse: yes
     
     - name: Write the webserver configuration version out as a custom fact
-      ini_file:
+      community.general.ini_file:
         path: "{{ facts_dir }}/webserver.fact"
         section: general
         option: version
@@ -43,7 +43,7 @@
       when: mode == "deploy"
     
     - name: Update webserver configuration version custom fact
-      ini_file:
+      community.general.ini_file:
         path: "{{ facts_dir }}/webserver.fact"
         section: general
         option: version
@@ -56,7 +56,7 @@
       when: mode == "update"
     
     - name: Write the webserver serial out as a custom fact
-      ini_file:
+      community.general.ini_file:
         path: "{{ facts_dir }}/webserver.fact"
         section: general
         option: serial
