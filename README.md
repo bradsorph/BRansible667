@@ -18,7 +18,7 @@ AAP will use the integrations with Terraform to be able to do it's thing on the 
 
 So what are the basics we have set up for you:
 1. A machine credential named RHEL. You use this machine credential to be able to run your playbooks on the providioned servers.
-2. A Custom Credential _Type_ called "Hashicorp Terraform Cloud". You use this later to create your credential.
+2. A Custom Credential _Type_ called "Hashicorp Terraform Cloud". You use this later to create your credential. See [here](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/getting_started_with_hashicorp_and_ansible_automation_platform/terraform-product#cloud-terraform-creating-credential) for details.
 3. An Inventory called "local" with the host "localhost" for api based automations.
 4. A token to be able to do stuff in Hashicorp Terraform Cloud. This token is available at: <TBC>
 5. An Execution Environment called "ee-tech-x-change-nl" in AAP that provides all the collections and dependencies you need in this workshop.
