@@ -63,7 +63,24 @@ Now that you have the basics set up (project, credential, inventory), you can de
 - deploy_website.yml. This playbook will dpeloy a website
 Have a look at the playbooks in this repo to get a sense of what they do.
 
-Create a Job Template for each of these playbooks. 
+Create a Job Template for each of these playbooks.
+For the deploy_servers playbook:
+- Use the provided "local" inventory. For all others the "TechXchangeNL" inventory.
+- Use the "Hashicorp Terraform Cloud" credential you made.
+
+For the other playbooks:
+- Use the TechXchangeNL inventory
+- Use the TechXchangeNL machine credential
+
+### Workflows
+Having job templates (automation building blocks) we create two workflows:
+1. A workflow that runs the following playbooks in that order:
+   1. update_server
+   2. deploy_webserver
+   3. deploy_website
+2. A workflow that run the following in that specific oprder:
+3.   
+
 
 
 
