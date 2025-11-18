@@ -58,6 +58,8 @@ Create an inventory called "TechXchangeNL" and add a dynamic inventory source to
 ```text
 plugin: cloud.terraform.terraform_state
 backend_type: remote
+compose:
+  ansible_host: public_ip
 ```
 Also, you need the Terraform Backend Configuration Credential you made as the credential for this source. You can test it by syncing the source manually. Finally you need to enable _update on launch_ on the inventory source.
 
