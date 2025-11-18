@@ -5,7 +5,7 @@
 - What is my username? -> The part before the @ of the email address you gave us
 - What is my password? -> It's on the whiteboard in the workshop room
 
-Ansible Automation Platform (AAP) has the notion of "Organisations". For this workshop an Organisation named TechXchangeNL has been made and your account is part of that. Everything you do you will do within that organisation.
+Ansible Automation Platform (AAP) has the notion of "Organizations". For this workshop an Organization named TechXchangeNL has been made and your account is part of that. Everything you do you will do within that organisation.
 
 This workshop has been designed such that **you** will need to do most of the work, signifying the word "work" in workshop ;-) This means we only have the absolute basics set up and you need to build all the components to make everything work.
 
@@ -82,6 +82,10 @@ Having job templates (automation building blocks) we create two workflows:
    1. deploy_servers
    2. sync inventory TechXchangeNL
    3. the proviously created workflow
+
+### token
+Part of the workshop is showing how you can run stuff _in_ AAP from HashiCorp Terraform Cloud. For this, you need to provide a token from AAP to HAshiCorp Terraform Cloud.
+
 
 
 
