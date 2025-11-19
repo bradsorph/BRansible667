@@ -9,7 +9,7 @@
       plan_only: true
       # auto_apply: true
       tf_timeout: 6000
-      poll: true
+      # poll: true
       state: "present"
     timeout: 10000
     register: result
