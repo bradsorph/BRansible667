@@ -83,15 +83,9 @@ As you can see in the repository where this README lives, there are 3 playbooks:
 - deploy_webserver.yml. This playbook will deploy a webserver (apache)
 - deploy_website.yml. This playbook will deploy a website
 
-Have a look at the playbooks in this repo to get a sense of what they do. You might notice that the playbook `deploy_webserver` is already made for you, but `apply_plan` and `deploy_website` is not. You need to develop these playbooks yourself (because you are here to learn, remember 😉). Use the embedded editor in github.
-
-#### apply_plan
-The documentation that you need can be found under `Automation Content > Collections > hashicorp.terraform` for `apply_plan`. You need the `run` module. As the name of the playbook suggests you need to apply the plan. 
+Have a look at the playbooks in this repo to get a sense of what they do. You might notice that the playbooks `deploy_webserver` and `deploy_website` are already made for you, but `apply_plan` is not. You need to develop this playbooks yourself (because you are here to learn the integration, remember 😉). Use the embedded editor in github. The documentation that you need can be found under `Automation Content > Collections > hashicorp.terraform`. You need the `run` module. As the name of the playbook suggests you need to `apply` the plan.
 
 > If you have timing issues we found that you need to enable polling with an interval of 5 and a timeout of 1200. Also make tf_timeout something like 6000.
-
-#### deploy_website
-For `deploy_website` you can find the documentation  you need [here](https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/git_module.html).
 
 
 ### Job Templates
