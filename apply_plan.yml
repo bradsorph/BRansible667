@@ -3,7 +3,6 @@
   tasks:
   - name: Apply a terraform plan
     hashicorp.terraform.run:
-      project_path: "."
       workspace_id: "ws-JSkwYVUBEkSrZFvo"
       state: "present"
       auto_apply: True 
