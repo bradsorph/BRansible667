@@ -2,9 +2,9 @@
   hosts: all
   tasks:
   - name: Apply a terraform plan
-      hashicorp.terraform.run:
-        project_path: "."
-        workspace_id: "ws-JSkwYVUBEkSrZFvo"
-        state: "present"
-        plan_file: "main.tf"
+    hashicorp.terraform.run:
+      project_path: "."
+      workspace_id: "ws-JSkwYVUBEkSrZFvo"
+      state: "present"
+      plan_file: "main.tf"
  
