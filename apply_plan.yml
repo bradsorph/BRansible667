@@ -6,5 +6,4 @@
       project_path: "."
       workspace_id: "ws-JSkwYVUBEkSrZFvo"
       state: "present"
-      plan_file: "main.tf"
- 
+      auto_apply: True 
